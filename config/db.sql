@@ -1,0 +1,16 @@
+CREATE TABLE work (
+id_db INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+id_users_giver INT(6) NOT NULL,
+work_des TEXT NOT NULL,
+pickup VARCHAR(255) NOT NULL,
+drop_point VARCHAR(50) NOT NULL,
+garuda INT DEFAULT 5,
+work_status TINYINT DEFAULT 0,
+id_users_doer INT(6) DEFAULT NULL,
+time_posted DATETIME DEFAULT CURRENT_TIMESTAMP,
+time_limit INT DEFAULT 2160,
+remarks TEXT ,
+otp INT DEFAULT 1000,
+phone_no INT(10) NOT NULL,
+aceepted TINYINT DEFAULT 0
+)
